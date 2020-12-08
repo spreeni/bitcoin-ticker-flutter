@@ -12,7 +12,7 @@ class NetworkHelper {
     if (res.statusCode == 200) {
       return jsonDecode(res.body);
     } else {
-      print(res.statusCode);
+      print('Error: Request returned status code ${res.statusCode}');
     }
   }
 }

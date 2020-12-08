@@ -42,8 +42,7 @@ class CoinData {
 
   Future<dynamic> getCoinData() async {
     Map<String, String> header = {'X-CoinAPI-Key': apiKey};
-    print('$coinAPI_URL/$fromCurrency/$toCurrency');
-    print(apiKey);
+
     NetworkHelper networker = NetworkHelper(
       url: '$coinAPI_URL/$fromCurrency/$toCurrency',
       headers: header,
